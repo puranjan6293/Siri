@@ -104,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
 
     try {
-      var apiKey = "AIzaSyA3LKzbOutMtS0TqpZMwenwrLLXstpYD0k";
+      var apiKey = "API kEY";
       var url =
           'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$apiKey';
 
@@ -201,7 +201,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
 
     try {
-      var apiKey = "AIzaSyA3LKzbOutMtS0TqpZMwenwrLLXstpYD0k";
+      var apiKey = "API kEY";
       var url =
           'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$apiKey';
 
