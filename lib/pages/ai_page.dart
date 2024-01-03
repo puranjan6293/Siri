@@ -144,7 +144,7 @@ class _VoiceChatPageState extends State<VoiceChatPage> {
     });
 
     try {
-      var apiKey = "";
+      var apiKey = "API_KEY";
       var url =
           'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$apiKey';
 

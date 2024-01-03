@@ -8,7 +8,7 @@ import 'package:siri/services/gemini/src/init.dart';
 import 'firebase_options.dart';
 
 void main() async {
-  Gemini.init(apiKey: '', enableDebugging: true);
+  Gemini.init(apiKey: 'API_KEY', enableDebugging: true);
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   Hive.registerAdapter(ChatAdapter());
