@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:siri/pages/widgets/siri_animation.dart';
 
 class AnimatedMicIcon extends StatefulWidget {
   final bool isListening;
@@ -23,7 +24,7 @@ class _AnimatedMicIconState extends State<AnimatedMicIcon>
       duration: const Duration(milliseconds: 300),
     );
 
-    _animation = Tween<double>(begin: 1.0, end: 1.9).animate(_controller);
+    _animation = Tween<double>(begin: 1.0, end: 1.5).animate(_controller);
   }
 
   @override
@@ -48,12 +49,13 @@ class _AnimatedMicIconState extends State<AnimatedMicIcon>
             width: 40,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.blue.withOpacity(0.2), // Adjust opacity as needed
+              color: Colors.green.withOpacity(0.1),
             ),
-            child: const Icon(
-              Icons.mic,
-              size: 30.0,
-              color: Colors.cyan,
+            child: const Center(
+              child: CircleAvatar(
+                  radius: 26,
+                  backgroundColor: Colors.white70,
+                  child: SiriCircleAnimation()),
             ),
           ),
         );
